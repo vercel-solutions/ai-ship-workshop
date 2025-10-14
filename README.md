@@ -38,14 +38,12 @@ Before starting the workshop, ensure you have:
 
 Run the development server:
 
-\`\`\`bash
-
+```bash
 pnpm install
 vercel link
 vercel env pull
 pnpm dev
-
-\`\`\`
+```
 
 Open [http://localhost:3000](http://localhost:3000) to see your application.
 
@@ -76,11 +74,11 @@ Test the application with "iPhone" in the brand input field.
 #### Task 1.4: Clone Locally
 
 - Clone the GitHub repository to your local machine
-  \`\`\`bash
+  ```bash
   git clone <your-repo-url>
   cd v0-ai-ship-workshop
   pnpm install
-  \`\`\`
+  ```
 
 ### 2. Refactor to AI SDK v5 Features
 
@@ -118,11 +116,11 @@ The main focus of this workshop is modernizing the codebase with AI SDK v5 featu
 
 #### Task 2.6: Push Changes to GitHub
 
-\`\`\`bash
+```bash
 git add .
 git commit -m "Refactor to AI SDK v5 with Agent class and modern patterns"
 git push origin main
-\`\`\`
+```
 
 ### 3. Sync and Enhance
 
