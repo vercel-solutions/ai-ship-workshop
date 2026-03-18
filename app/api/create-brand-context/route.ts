@@ -3,8 +3,13 @@ import { generateText } from "ai"
 import { redis } from "@/lib/upstash"
 
 export async function POST(request: NextRequest) {
+  console.log("[v0] create-brand-context route called")
+  console.log("[v0] KV_REST_API_URL:", process.env.KV_REST_API_URL)
+  console.log("[v0] KV_REST_API_TOKEN exists:", !!process.env.KV_REST_API_TOKEN)
+  
   try {
     const { runId, brand } = await request.json()
+    console.log("[v0] runId:", runId, "brand:", brand)
 
     if (!runId || !brand) {
       return NextResponse.json({ error: "Missing runId or brand" }, { status: 400 })
