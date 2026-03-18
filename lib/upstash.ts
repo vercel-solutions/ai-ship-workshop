@@ -1,6 +1,9 @@
 import { Redis } from "@upstash/redis"
 
-export const redis = Redis.fromEnv()
+export const redis = new Redis({
+  url: process.env.KV_REST_API_URL!,
+  token: process.env.KV_REST_API_TOKEN!,
+})
 
 export type BrandContext = {
   brand: string
