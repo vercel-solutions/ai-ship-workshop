@@ -1,5 +1,5 @@
 > **Note**
-> START by cloning the template from https://v0.app/templates/ai-ship-workshop-tyVvKQthD7X
+> START by importing this repo into v0
 
 # AI Ship 2025 Workshop - v0 Template Starter
 
